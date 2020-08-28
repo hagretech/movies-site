@@ -1,6 +1,16 @@
 
+body{
+    background: black;
+}
+h1,h2,h3,p{
+    color: white;
+}
 .white{
     color: white;
+}
+li{
+    color: white;
+    list-style: none;
 }
 .hero{
     width: 100%;
@@ -25,3 +35,33 @@
     z-index: -1;
     opacity: 0.7;
 }
+
+
+/* main */
+main{
+    margin: 0;
+}
+
+.movies__trending{
+    margin: 40px 0;
+}
+.movies__trending h1{
+    margin: 30px 15px;	
+}
+.movies__img{
+    width: 250px;
+    padding: 20px;
+    height: 380px;
+    transition: 1s;
+}
+.movies__list {
+	padding: 0;
+}
+.movie__info{
+    display: none;
+}
+.movies__ad {
+	background: white;
+    
+}
+
