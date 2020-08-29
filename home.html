@@ -1,115 +1,302 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>kirubel cenima</title>
     <link rel="stylesheet" href="src/libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/libs/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/style/main.css">
-  </head>
+</head>
 
-  <body>
-       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Kiztopia cinema</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="float-right collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">drama</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Kiztopia cinema</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="float-right collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        gerne
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">drama</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </li>
-    </ul>
-  </div>
-</nav>
+    </nav>
     <div class="hero">
         <div class="hero__cont">
-           <img src="src/imgs/hero.jpg" alt="hero-img" class="hero__img">
+            <img src="src/imgs/hero.jpg" alt="hero-img" class="hero__img">
             <h1 class="hero__h1 white">welcome to the home of movies</h1>
             <p class="hero_p white">browse and get amazing movies and get your ticker now</p>
             <button class="btn btn-outline-primary">Browse now</button>
         </div>
     </div>
     <br>
-    <div class="container">
-        
-    
-    <main class="row">
-        <div class="movies col-md-9 col-sm-9">
-           <div class="movies__trending">
-               <h1>Trending</h1>
-            <ul class="movies__list row movie">
-                <li class="col-md-4">
-                    <img src="src/imgs/movies/angels.jpeg" alt="" class="movies__img">
-                    <div class="movie__info">
-                        <h3>Angels Fallen</h3>
-                        <a href=""></a>
-                        <ul class="info__ul">
-                            <li>gerend: action</li>
-                            <li>rating: 8.7/10</li>
-                            <li>year: 2018</li>
-                            <li><big>on 20 aug 2020</big></li>
-                        </ul>
-                        <button class="btn btn-primary">Buy now</button>
-                    </div>
-                </li>
-                <li class="col-md-4">
-                    <img src="src/imgs/movies/birds.jfif" alt="birds of prey" class="movies__img">
+    <div class="">
 
-                    <div class="movie__info">
-                        <h3>Angels Fallen</h3>
-                        <a href=""></a>
-                        <ul class="info__ul">
-                            <li>gerend: action</li>
-                            <li>rating: 8.7/10</li>
-                            <li>year: 2018</li>
-                            <li><big>on 20 aug 2020</big></li>
-                        </ul>
-                        <button class="btn btn-primary">Buy now</button>
-                    </div>
-                </li>
-                <li class="col-md-4">
-                    <img src="src/imgs/movies/baaghi.jfif" alt="baaghi3 fallen" class="movies__img">
 
-                    <div class="movie__info">
-                        <h3>Angels Fallen</h3>
-                        <a href=""></a>
-                        <ul class="info__ul">
-                            <li>gerend: action</li>
-                            <li>rating: 8.7/10</li>
-                            <li>year: 2018</li>
-                            <li><big>on 20 aug 2020</big></li>
-                        </ul>
-                        <button class="btn btn-primary">Buy now</button>
+        <main class="row">
+            <div class="movies col-md-10 col-sm-12">
+
+                <div class="movies__trending">
+                    <h1>Trending</h1>
+                    <ul class="movies__list row movie" id="m">
+                        <li class="col-md-3 col-sm-6  movie" id='movie1'>
+                            <img src="src/imgs/movies/angels.jpeg" alt="" class="movies__img">
+                            <div class="movie__info">
+                                <div>
+                                    <h3>Angels Fallen</h3>
+
+                                    <ul class="info__ul">
+                                        <li>genre: action</li>
+                                        <li>reviews: 8.7/10</li>
+                                        <li>year: 2018</li>
+                                        <li><big>on 20 aug 2020</big></li>
+                                    </ul>
+                                    <a class='btn btn-primary' href="login.html">Book now</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6  movie" id='movie1'>
+                            <img src="src/imgs/movies/afterdarkness.jfif" alt="" class="movies__img">
+                            <div class="movie__info">
+                                <div>
+                                    <h3>After darkness</h3>
+
+                                    <ul class="info__ul">
+                                        <li>genre: action</li>
+                                        <li>reviews: 8.7/10</li>
+                                        <li>year: 2018</li>
+                                        <li><big>on 20 aug 2020</big></li>
+                                    </ul>
+                                    <a class='btn btn-primary' href="login.html">Book now</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6  movie" id='movie1'>
+                            <img src="src/imgs/movies/arrow.jfif" alt="" class="movies__img">
+                            <div class="movie__info">
+                                <div>
+                                    <h3>Arrow</h3>
+
+                                    <ul class="info__ul">
+                                        <li>genre: action</li>
+                                        <li>reviews: 8.7/10</li>
+                                        <li>year: 2018</li>
+                                        <li><big>on 20 aug 2020</big></li>
+                                    </ul>
+                                    <a class='btn btn-primary' href="login.html">Book now</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6  movie" id='movie1'>
+                            <img src="src/imgs/movies/back%20track.jpg" alt="" class="movies__img">
+                            <div class="movie__info">
+                                <div>
+                                    <h3>Backtrack</h3>
+                                    <a href=""></a>
+                                    <ul class="info__ul">
+                                        <li>genre: action</li>
+                                        <li>reviews: 8.7/10</li>
+                                        <li>year: 2018</li>
+                                        <li><big>on 20 aug 2020</big></li>
+                                    </ul>
+                                    <a class='btn btn-primary' href="login.html">Book now</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="movies__trending">
+                    <h1>NEW</h1>
+                    <ul class="movies__list row movie" id="m">
+                        <li class="col-md-3 col-sm-6  movie" id='movie1'>
+                            <img src="src/imgs/movies/cymbeline.jpg" alt="" class="movies__img">
+                            <div class="movie__info">
+                                <div>
+                                    <h3>CYMBELINE</h3>
+
+                                    <ul class="info__ul">
+                                        <li>genre: action</li>
+                                        <li>reviews: 8.7/10</li>
+                                        <li>year: 2018</li>
+                                        <li><big>on 20 aug 2020</big></li>
+                                    </ul>
+                                    <a class='btn btn-primary' href="login.html">Book now</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6  movie" id='movie1'>
+                            <img src="src/imgs/movies/Dora.jfif" alt="" class="movies__img">
+                            <div class="movie__info">
+                                <div>
+                                    <h3>Dora</h3>
+
+                                    <ul class="info__ul">
+                                        <li>genre: action</li>
+                                        <li>reviews: 8.7/10</li>
+                                        <li>year: 2018</li>
+                                        <li><big>on 20 aug 2020</big></li>
+                                    </ul>
+                                    <a class='btn btn-primary' href="login.html">Book now</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6  movie" id='movie1'>
+                            <img src="src/imgs/movies/happy%20glimore.jpg" alt="" class="movies__img">
+                            <div class="movie__info">
+                                <div>
+                                    <h3>Happy Glimore</h3>
+
+                                    <ul class="info__ul">
+                                        <li>genre: action</li>
+                                        <li>reviews: 8.7/10</li>
+                                        <li>year: 2018</li>
+                                        <li><big>on 20 aug 2020</big></li>
+                                    </ul>
+                                    <a class='btn btn-primary' href="login.html">Book now</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6  movie" id='movie1'>
+                            <img src="src/imgs/movies/medium-cover.jpg" alt="" class="movies__img">
+                            <div class="movie__info">
+                                <div>
+                                    <h3>ZombieLand</h3>
+                                    <a href=""></a>
+                                    <ul class="info__ul">
+                                        <li>genre: action</li>
+                                        <li>reviews: 8.7/10</li>
+                                        <li>year: 2018</li>
+                                        <li><big>on 20 aug 2020</big></li>
+                                    </ul>
+                                    <a class='btn btn-primary' href="login.html">Book now</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="movies__trending">
+                    <h1>Amharic</h1>
+                    <ul class="movies__list row movie" id="m">
+                        <li class="col-md-3 col-sm-6  movie" id='movie1'>
+                            <img src="src/imgs/movies/amharic/arfag.webp" alt="" class="movies__img">
+                            <div class="movie__info">
+                                <div>
+                                    <h3>Arfaj</h3>
+
+                                    <ul class="info__ul">
+                                        <li>genre: action</li>
+                                        <li>reviews: 8.7/10</li>
+                                        <li>year: 2018</li>
+                                        <li><big>on 20 aug 2020</big></li>
+                                    </ul>
+                                    <a class='btn btn-primary' href="login.html">Book now</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6  movie" id='movie1'>
+                            <img src="src/imgs/movies/amharic/shefu.webp" alt="" class="movies__img">
+                            <div class="movie__info">
+                                <div>
+                                    <h3>Shefu 2</h3>
+
+                                    <ul class="info__ul">
+                                        <li>genre: action</li>
+                                        <li>reviews: 8.7/10</li>
+                                        <li>year: 2018</li>
+                                        <li><big>on 20 aug 2020</big></li>
+                                    </ul>
+                                    <a class='btn btn-primary' href="login.html">Book now</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6  movie" id='movie1'>
+                            <img src="src/imgs/movies/amharic/utopia.webp" alt="" class="movies__img">
+                            <div class="movie__info">
+                                <div>
+                                    <h3>Utopia</h3>
+
+                                    <ul class="info__ul">
+                                        <li>genre: action</li>
+                                        <li>reviews: 8.7/10</li>
+                                        <li>year: 2018</li>
+                                        <li><big>on 20 aug 2020</big></li>
+                                    </ul>
+                                    <a class='btn btn-primary' href="login.html">Book now</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6  movie" id='movie1'>
+                            <img src="src/imgs/movies/amharic/arfag.webp" alt="" class="movies__img">
+                            <div class="movie__info">
+                                <div>
+                                    <h3>Arfaj</h3>
+
+                                    <ul class="info__ul">
+                                        <li>genre: action</li>
+                                        <li>reviews: 8.7/10</li>
+                                        <li>year: 2018</li>
+                                        <li><big>on 20 aug 2020</big></li>
+                                    </ul>
+                                    <a class='btn btn-primary' href="login.html">Book now</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="movies__ad  col-md-2 col-sm-12">
+
+            </div>
+
+
+            <footer style="width: 100%;">
+                <div class="container">
+                    <div class="row footer__cont">
+                        <div class="col-md-6 col-sm-6 links">
+                            <ul style="text-align: center">
+                                <li>movies</li>
+                                <li>buy Ticket now</li>
+                                <li>movie API</li>
+                                <li>contact us</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6 links">
+                            <ul style="text-align: center;" class="row">
+                                <li class="fa fa-facebook"></li>
+                                <li class="fa fa-telegram"></li>
+                                <li class="fa fa-github"></li>
+                                <li class="fa fa-instagram"></li>
+                            </ul>
+                        </div>
                     </div>
-                </li>
-                
-            </ul>
-           </div>
-        </div>
-        <div class="movies__ad  col-md-3 col-sm-3">
-            
-        </div>
-    </main>
+                    <p style="text-align: center; margin: 0;">handcrafted by me CopyRight 2020</p>
+                </div>
+            </footer>
+        </main>
     </div>
     <script src='src/libs/jquery/jquery.min.js'></script>
     <script src="src/libs/bootstrap/js/bootstrap.js"></script>
-    
+
     <script src="src/js/main.js"></script>
-  </body>
+</body>
 
 </html>
