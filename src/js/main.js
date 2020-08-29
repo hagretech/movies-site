@@ -1,3 +1,5 @@
+new WOW().init();
+
 // Global variabels
 var moviesList = $('.movies__list'),
     active = '';
